@@ -7,11 +7,37 @@ body{
     width: 20%;
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid red
+    /* border: 1px solid red */
 }
 
 img{
     /* transform: translateX(-200px, 200px); */
     /* transform: scale(3, 2); */
-    transform: rotateZ(-90deg) translateY(200px) scale(2);
+    transform: rotateZ(0deg) 
+    /* translateY(200px) 
+    scale(2); */
+}
+
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    border-radius: 50px;
+    background: pink;
+    color: aliceblue;
+    cursor: pointer;
+    transition: background 1s, transform 1s 1s ease;
+    /* linear tham số đầu: màu đổi dần sau 1s
+        Tham số 2: Tốc độ chuyển
+        Tham số 3: Độ trễ
+        Tham số 4: Kiểu Tốc độ chuyển
+        linear: v k đổi
+        ease-in: tăng dần
+    */
+}
+
+.circle:hover{
+    background: salmon;
+    transform: rotate(360deg);
 }
