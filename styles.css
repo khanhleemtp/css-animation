@@ -100,12 +100,14 @@ html, body{
     animation-fill-mode: both;
     /* Đẹp nhất  */
     animation-delay: 2s;
+    animation-iteration-count: infinite;
+    /* Lặp animation vô hạn  */
 }
 
 
 /* Keyframes */
 
 @keyframes drive{
-    from{transform: translateX(200px);}
-    to{transform: translateX(1200px);}
+    from{transform: translateX(-200px);}
+    to{transform: translateX(1600px);}
 }
