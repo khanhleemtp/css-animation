@@ -92,7 +92,7 @@ html, body{
     top: -40px;
     left: 0px;
     animation-name: drive;
-    animation-duration: 2s;
+    animation-duration: 5s;
     /* animation-fill-mode: forwards; */
     /* Bị delay ở vị trí gốc 2s */
     /* animation-fill-mode: backwards; */
@@ -102,6 +102,8 @@ html, body{
     animation-delay: 2s;
     animation-iteration-count: infinite;
     /* Lặp animation vô hạn  */
+    animation-timing-function: cubic-bezier(.71,.08,.15,.86);
+    /* Kiểu đi của mario */
 }
 
 .luigi{
